@@ -1,11 +1,38 @@
+<!-- Save as index.html -->
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Vibez</title>
-  </head>
-  <body style="font-family:sans-serif; text-align:center; padding:50px;">
-    <h1>Welcome to Vibez 🌐</h1>
-    <p>This is my very first free website!</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Site Title</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding: 3rem; max-width: 900px; margin: auto; line-height:1.6; }
+    header { margin-bottom: 2rem; }
+    h1 { font-size: 2rem; margin: 0 0 .2rem 0; }
+    p.lead { color: #555; margin-top:0; }
+    a.button { display:inline-block; margin-top:1rem; padding:.6rem 1rem; border-radius:8px; text-decoration:none; border:1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hello — I’m [Your Name]</h1>
+    <p class="lead">This is my free website. Replace this text with what you do and links to your work.</p>
+    <a class="button" href="#work">See my work</a>
+  </header>
+
+  <section id="work">
+    <h2>Work</h2>
+    <ul>
+      <li>Project A — short description</li>
+      <li>Project B — short description</li>
+    </ul>
+  </section>
+
+  <footer style="margin-top:3rem;color:#777;">
+    © <span id="year"></span> — <a href="mailto:you@example.com">you@example.com</a>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
 </html>
+
