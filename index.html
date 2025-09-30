@@ -1,38 +1,45 @@
-<!-- Save as index.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Site Title</title>
+  <title>Vibez</title>
   <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding: 3rem; max-width: 900px; margin: auto; line-height:1.6; }
-    header { margin-bottom: 2rem; }
-    h1 { font-size: 2rem; margin: 0 0 .2rem 0; }
-    p.lead { color: #555; margin-top:0; }
-    a.button { display:inline-block; margin-top:1rem; padding:.6rem 1rem; border-radius:8px; text-decoration:none; border:1px solid #ccc; }
+    body { font-family: Arial, sans-serif; background:#111; color:#eee; margin:0; }
+    header { background:#222; padding:2rem; text-align:center; }
+    header h1 { margin:0; font-size:2.5rem; color:#0ff; }
+    header p { margin:0.5rem 0 0; color:#aaa; }
+    nav { background:#333; padding:0.5rem; text-align:center; }
+    nav a { color:#0ff; margin:0 1rem; text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
+    main { max-width:800px; margin:2rem auto; padding:0 1rem; }
+    article { background:#222; padding:1rem; margin-bottom:1.5rem; border-radius:8px; }
+    article h2 { margin-top:0; color:#0ff; }
+    footer { text-align:center; padding:2rem; color:#666; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Hello — I’m [Your Name]</h1>
-    <p class="lead">This is my free website. Replace this text with what you do and links to your work.</p>
-    <a class="button" href="#work">See my work</a>
+    <h1>🌐 Vibez</h1>
+    <p>Welcome to my corner of the web</p>
   </header>
-
-  <section id="work">
-    <h2>Work</h2>
-    <ul>
-      <li>Project A — short description</li>
-      <li>Project B — short description</li>
-    </ul>
-  </section>
-
-  <footer style="margin-top:3rem;color:#777;">
-    © <span id="year"></span> — <a href="mailto:you@example.com">you@example.com</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="music.html">Music</a>
+  </nav>
+  <main>
+    <h2>Latest Posts</h2>
+    <article>
+      <h2><a href="post1.html">My First Post</a></h2>
+      <p>This is where I share my thoughts. Click to read more…</p>
+    </article>
+    <article>
+      <h2><a href="post2.html">Another Vibez</a></h2>
+      <p>Here’s another sample post for the blog.</p>
+    </article>
+  </main>
+  <footer>
+    © 2025 Vibez — Powered by GitHub Pages
   </footer>
-
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
